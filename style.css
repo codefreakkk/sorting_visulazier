@@ -89,3 +89,36 @@ body {
     line-height: 35px; 
     margin: auto;
 }
+
+.info {
+    /* background-color: red; */
+}
+
+.info_inner {
+    position: absolute;
+    /* border: 1px solid red; */
+    width: 30%;
+    height: 35vh;
+    color: white;
+    padding-top: 20px;
+}
+
+.element{
+    height: 10px;
+    width: 70px;
+    background-color: #e43f5a;
+}
+
+.sorting_element {
+    height: 10px;
+    width: 70px;
+    background-color: #17a2b8;
+    margin-left: 11px;
+}
+
+.sorted_element {
+    height: 10px;
+    width: 70px;
+    background-color: green;
+    margin-left: 10px;
+}

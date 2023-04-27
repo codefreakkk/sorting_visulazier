@@ -1,6 +1,6 @@
 // swap function util for sorting algorithms takes input of 2 DOM elements with .style.height feature
 function swap(el1, el2) {    
-    let temp = el1.style.height;    //third variable for swapping
+    let temp = el1.style.height;    
     el1.style.height = el2.style.height;
     el2.style.height = temp;
 }
@@ -143,3 +143,43 @@ stopSortingButton.addEventListener("click", function(){
     disableSizeSlider();
     hasPressedStop = true;
 })
+
+const best = document.getElementById("best");
+const average = document.getElementById("average");
+const worst = document.getElementById("worst");
+
+const bubbleToggle = () => {
+    best.innerHTML = "o(n)";
+    average.innerHTML = "o(n^2)"
+    worst.innerHTML = "o(n^2)"
+}
+
+const mergeToggle = () => {
+    best.innerHTML = "o(nlog(n))";
+    average.innerHTML = "o(nlog(n))";
+    worst.innerHTML = "o(nlog(n))";
+}
+
+const selectToggle = () => {
+    best.innerHTML = "o(n^2)";
+    average.innerHTML = "o(n^2)";
+    worst.innerHTML = "o(n^2)";
+}
+
+const quickToggle = () => {
+    best.innerHTML = "o(nlog(n))";
+    average.innerHTML = "o(nlog(n))";
+    worst.innerHTML = "o(n^2)";
+}
+
+const heapToggle = () => {
+    best.innerHTML = "o(nlog(n))";
+    average.innerHTML = "o(nlog(n))";
+    worst.innerHTML = "o(nlog(n))";
+}
+
+const insertToggle = () => {
+    best.innerHTML = "o(n))";
+    average.innerHTML = "o(n^2)";
+    worst.innerHTML = "o(n^2)";
+}
